@@ -85,9 +85,9 @@ export default function App() {
       description:
         "Diseños modernos y funcionales con materiales premium y terminaciones elegantes.",
       images: [
-        "/images/projects/cocinas/cocina1.jpg",
-        "/images/projects/cocinas/cocina2.jpg",
-        "/images/projects/cocinas/cocina3.jpg",
+        "/images/placeholder.jpg",
+        "/images/placeholder.jpg",
+        "/images/placeholder.jpg",
       ],
     },
 
@@ -96,9 +96,9 @@ export default function App() {
       description:
         "Estructuras exteriores modernas combinando diseño y resistencia.",
       images: [
-        "/images/projects/pergolas/pergola1.jpg",
-        "/images/projects/pergolas/pergola2.jpg",
-        "/images/projects/pergolas/pergola3.jpg",
+        "/images/placeholder.jpg",
+        "/images/placeholder.jpg",
+        "/images/placeholder.jpg",
       ],
     },
 
@@ -107,9 +107,9 @@ export default function App() {
       description:
         "Muebles personalizados pensados para integrar diseño y funcionalidad.",
       images: [
-        "/images/projects/bibliotecas/biblio1.jpg",
-        "/images/projects/bibliotecas/biblio2.jpg",
-        "/images/projects/bibliotecas/biblio3.jpg",
+        "/images/placeholder.jpg",
+        "/images/placeholder.jpg",
+        "/images/placeholder.jpg",
       ],
     },
 
@@ -118,9 +118,9 @@ export default function App() {
       description:
         "Diseños modernos en herrería y carpintería para espacios únicos.",
       images: [
-        "/images/projects/parrillas/parrilla1.jpg",
-        "/images/projects/parrillas/parrilla2.jpg",
-        "/images/projects/parrillas/parrilla3.jpg",
+        "/images/placeholder.jpg",
+        "/images/placeholder.jpg",
+        "/images/placeholder.jpg",
       ],
     },
 
@@ -129,9 +129,9 @@ export default function App() {
       description:
         "Proyectos personalizados realizados según las necesidades de cada cliente.",
       images: [
-        "/images/projects/otros/otro1.jpg",
-        "/images/projects/otros/otro2.jpg",
-        "/images/projects/otros/otro3.jpg",
+        "/images/placeholder.jpg",
+        "/images/placeholder.jpg",
+        "/images/placeholder.jpg",
       ],
     },
   };
