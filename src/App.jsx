@@ -987,6 +987,7 @@ export default function App() {
           <input
             type="text"
             name="nombre"
+            autoComplete="name"
             placeholder="Nombre"
             required
             minLength={3}
@@ -996,6 +997,7 @@ export default function App() {
           <input
             type="email"
             name="email"
+            autoComplete="email"
             placeholder="Correo electrónico"
             required
             className="w-full bg-black border border-zinc-700 rounded-xl px-4 py-4 focus:outline-none focus:border-yellow-500"
@@ -1004,6 +1006,7 @@ export default function App() {
           <input
             type="tel"
             name="telefono"
+            autoComplete="tel"
             placeholder="Teléfono"
             className="w-full bg-black border border-zinc-700 rounded-xl px-4 py-4 focus:outline-none focus:border-yellow-500"
           />
@@ -1020,6 +1023,7 @@ export default function App() {
          <textarea
             rows="5"
             name="proyecto"
+            autoComplete="off"
             placeholder="Cuéntanos tu proyecto"
             required
             minLength={15}
