@@ -123,6 +123,7 @@ export default function App() {
       images: [
         "/images/projects/parrillas/parrilla1.webp",
         "/images/projects/parrillas/parrilla2.webp",
+        "/images/projects/parrillas/parrilla3.webp",
       ],
     },
 
@@ -941,7 +942,7 @@ export default function App() {
             <div className="mt-10 space-y-6">
               <div className="flex items-center gap-4">
                 <Phone className="text-yellow-500" />
-                <span>+54 9 11 3638-5790</span>
+                <span>+54 9 11 5568-1767</span>
               </div>
 
               <div className="flex items-center gap-4">
@@ -1111,6 +1112,10 @@ export default function App() {
             fadeEffect={{ crossFade: true }}
             zoom={true}
             loop={true}
+            speed={800}
+            touchRatio={1.2}
+            longSwipesRatio={0.2}
+            resistanceRatio={0.85}
             className="w-full h-full"
           >
             {selectedProject.images.map((img, index) => (
