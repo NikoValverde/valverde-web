@@ -87,7 +87,11 @@ export default function App() {
       images: [
         "/images/projects/cocinas/cocina1.webp",
         "/images/projects/cocinas/cocina2.webp",
-        "/images/placeholder.jpg",
+        "/images/projects/cocinas/cocina3.webp",
+        "/images/projects/cocinas/cocina4.webp",
+        "/images/projects/cocinas/cocina5.webp",
+        "/images/projects/cocinas/cocina6.webp",
+        "/images/projects/cocinas/cocina7.webp",
       ],
     },
 
@@ -97,8 +101,8 @@ export default function App() {
         "Estructuras exteriores modernas combinando diseño y resistencia.",
       images: [
         "/images/projects/pergolas/pergola1.webp",
-        "/images/placeholder.jpg",
-        "/images/placeholder.jpg",
+        "/images/projects/pergolas/pergola2.webp",
+        "/images/projects/pergolas/pergola3.webp",
       ],
     },
 
@@ -109,7 +113,7 @@ export default function App() {
       images: [
         "/images/projects/puertas/puerta1.webp",
         "/images/projects/puertas/puerta2.webp",
-        "/images/placeholder.jpg",
+        "/images/projects/puertas/puerta3.webp",
       ],
     },
 
@@ -119,8 +123,7 @@ export default function App() {
         "Diseños modernos en herrería y carpintería para espacios únicos.",
       images: [
         "/images/projects/parrillas/parrilla1.webp",
-        "/images/placeholder.jpg",
-        "/images/placeholder.jpg",
+        "/images/projects/parrillas/parrilla2.webp",
       ],
     },
 
@@ -130,8 +133,10 @@ export default function App() {
         "Proyectos personalizados realizados según las necesidades de cada cliente.",
       images: [
         "/images/projects/otros/mesas1.webp",
-        "/images/placeholder.jpg",
-        "/images/placeholder.jpg",
+        "/images/projects/otros/escalera.webp",
+        "/images/projects/otros/escalera1.webp",
+        "/images/projects/otros/divisor.webp",
+        "/images/projects/otros/escritorio.webp",
       ],
     },
   };
@@ -693,7 +698,7 @@ export default function App() {
                     }`}
                   >
                     <p className="text-zinc-200 leading-relaxed">
-                      Combinación de metal y vidrio para ambientes modernos y elegantes.
+                      Frentes de parrilla diseñados a medida, combinando funcionalidad, resistencia y estética moderna.
                     </p>
                   </div>
 
