@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /private
+
+Sitemap: https://carpinteriavalverde.vercel.app/sitemap.xml
+
+# Crawl delay para respetar recursos del servidor
+Crawl-delay: 1
