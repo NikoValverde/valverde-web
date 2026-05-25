@@ -755,10 +755,10 @@ export default function App() {
               },
 
               {
-                title: "Bibliotecas",
+                title: "Puertas Principales",
                 category: "Carpintería",
                 image: "/images/portfolio/trabajo3.webp",
-                project: projects.bibliotecas,
+                project: projects.puertas,
               },
 
               {
