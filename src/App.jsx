@@ -7,7 +7,7 @@ import FancyText from "./components/FancyText";
 
 import { useState } from "react";
 
-import heroImage from "./assets/Banner-1.jpg";
+import heroImage from "./assets/Banner-1.webp";
 
 import {
   Hammer,
@@ -85,8 +85,8 @@ export default function App() {
       description:
         "Diseños modernos y funcionales con materiales premium y terminaciones elegantes.",
       images: [
-        "/images/placeholder.jpg",
-        "/images/placeholder.jpg",
+        "/images/projects/cocinas/cocina1.webp",
+        "/images/projects/cocinas/cocina2.webp",
         "/images/placeholder.jpg",
       ],
     },
@@ -96,19 +96,19 @@ export default function App() {
       description:
         "Estructuras exteriores modernas combinando diseño y resistencia.",
       images: [
-        "/images/placeholder.jpg",
+        "/images/projects/pergolas/pergola1.webp",
         "/images/placeholder.jpg",
         "/images/placeholder.jpg",
       ],
     },
 
-    bibliotecas: {
-      title: "Bibliotecas",
+    puertas: {
+      title: "Puertas Principales",
       description:
-        "Muebles personalizados pensados para integrar diseño y funcionalidad.",
+        "Puertas principales macizas fabricadas a medida.",
       images: [
-        "/images/placeholder.jpg",
-        "/images/placeholder.jpg",
+        "/images/projects/puertas/puerta1.webp",
+        "/images/projects/puertas/puerta2.webp",
         "/images/placeholder.jpg",
       ],
     },
@@ -118,7 +118,7 @@ export default function App() {
       description:
         "Diseños modernos en herrería y carpintería para espacios únicos.",
       images: [
-        "/images/placeholder.jpg",
+        "/images/projects/parrillas/parrilla1.webp",
         "/images/placeholder.jpg",
         "/images/placeholder.jpg",
       ],
@@ -129,7 +129,7 @@ export default function App() {
       description:
         "Proyectos personalizados realizados según las necesidades de cada cliente.",
       images: [
-        "/images/placeholder.jpg",
+        "/images/projects/otros/mesas1.webp",
         "/images/placeholder.jpg",
         "/images/placeholder.jpg",
       ],
@@ -360,7 +360,7 @@ export default function App() {
 
                 {/* IMAGEN */}
                 <img
-                  src="/images/servicios/carpinteria.jpg"
+                  src="/images/servicios/carpinteria.webp"
                   alt="Carpintería"
                   className="absolute inset-0 w-full h-full object-cover scale-100 blur-0 brightness-90 transition-all duration-700 group-hover:scale-110 group-hover:blur-[2px] group-hover:brightness-50"
                 />
@@ -399,7 +399,7 @@ export default function App() {
 
                 {/* IMAGEN */}
                 <img
-                  src="/images/servicios/herreria.jpg"
+                  src="/images/servicios/herreria.webp"
                   alt="Herrería"
                   className="absolute inset-0 w-full h-full object-cover scale-100 blur-0 brightness-90 transition-all duration-700 group-hover:scale-110 group-hover:blur-[2px] group-hover:brightness-50"
                 />
@@ -468,7 +468,7 @@ export default function App() {
               }`}
               style={{
                 backgroundImage:
-                  "url('/images/portfolio/trabajo1.jpg')",
+                  "url('/images/portfolio/trabajo1.webp')",
               }}
             >
               <div
@@ -488,7 +488,7 @@ export default function App() {
               }`}
               style={{
                 backgroundImage:
-                  "url('/images/portfolio/trabajo2.jpg')",
+                  "url('/images/portfolio/trabajo2.webp')",
               }}
             >
               <div
@@ -508,7 +508,7 @@ export default function App() {
               }`}
               style={{
                 backgroundImage:
-                  "url('/images/portfolio/trabajo3.jpg')",
+                  "url('/images/portfolio/trabajo3.webp')",
               }}
             >
               <div
@@ -528,7 +528,7 @@ export default function App() {
               }`}
               style={{
                 backgroundImage:
-                  "url('/images/portfolio/trabajo4.jpg')",
+                  "url('/images/portfolio/trabajo4.webp')",
               }}
             >
               <div
@@ -548,7 +548,7 @@ export default function App() {
               }`}
               style={{
                 backgroundImage:
-                  "url('/images/portfolio/otro1.jpg')",
+                  "url('/images/portfolio/otro1.webp')",
               }}
             >
               <div
@@ -567,34 +567,32 @@ export default function App() {
               <div
                 onMouseEnter={() => setActiveIndex(0)}
                 onClick={() => setSelectedProject(projects.cocinas)}
-                className="group relative flex flex-col justify-end p-8 border-b md:border-b-0 md:border-r border-white/10 cursor-pointer overflow-hidden"
+                className="group relative flex flex-col justify-end p-8 border-r border-white/10 cursor-pointer overflow-hidden"
               >
 
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent opacity-80 transition-all duration-500 group-hover:bg-black/80"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent transition-all duration-500 group-hover:bg-black/20"></div>
 
-                <div className="relative z-10 transition-all duration-500 group-hover:-translate-y-2">
+                <div className="relative z-10 mt-auto">
 
                   <span className="text-yellow-500 text-sm uppercase tracking-[3px]">
                     Carpintería
                   </span>
 
-                  <button
-                    className="text-left"
-                  >
-                    <h3 className="text-white text-3xl font-bold mt-3 hover:text-yellow-400 transition">
-                      Cocinas a Medida
-                    </h3>
-                  </button>
+                  <h3 className="text-white text-3xl font-bold mt-3 leading-tight min-h-[96px]">
+                    Cocinas a Medida
+                  </h3>
 
-                  <p
-                    className={`text-zinc-300 mt-4 leading-relaxed transition-all duration-500 ${
+                  <div
+                    className={`overflow-hidden transition-all duration-500 ${
                       activeIndex === 0
-                        ? "opacity-100 translate-y-0"
-                        : "opacity-0 translate-y-4"
+                        ? "max-h-40 opacity-100 mt-4"
+                        : "max-h-0 opacity-0"
                     }`}
                   >
-                    Diseño moderno con materiales de primera calidad y terminaciones elegantes.
-                  </p>
+                    <p className="text-zinc-200 leading-relaxed">
+                      Diseño moderno con materiales de primera calidad y terminaciones elegantes.
+                    </p>
+                  </div>
 
                 </div>
               </div>
@@ -603,34 +601,32 @@ export default function App() {
               <div
                 onMouseEnter={() => setActiveIndex(1)}
                 onClick={() => setSelectedProject(projects.pergolas)}
-                className="group relative flex flex-col justify-end p-8 border-b md:border-b-0 md:border-r border-white/10 cursor-pointer overflow-hidden"
+                className="group relative flex flex-col justify-end p-8 border-r border-white/10 cursor-pointer overflow-hidden"
               >
 
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent opacity-80 transition-all duration-500 group-hover:bg-black/80"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent transition-all duration-500 group-hover:bg-black/20"></div>
 
-                <div className="relative z-10 transition-all duration-500 group-hover:-translate-y-2">
+                <div className="relative z-10 mt-auto">
 
                   <span className="text-yellow-500 text-sm uppercase tracking-[3px]">
                     Herrería
                   </span>
 
-                  <button
-                    className="text-left"
-                  >
-                    <h3 className="text-white text-3xl font-bold mt-3 hover:text-yellow-400 transition">
-                      Pérgolas
-                    </h3>
-                  </button>
+                  <h3 className="text-white text-3xl font-bold mt-3 leading-tight min-h-[96px]">
+                    Pérgolas
+                  </h3>
 
-                  <p
-                    className={`text-zinc-300 mt-4 leading-relaxed transition-all duration-500 ${
+                  <div
+                    className={`overflow-hidden transition-all duration-500 ${
                       activeIndex === 1
-                        ? "opacity-100 translate-y-0"
-                        : "opacity-0 translate-y-4"
+                        ? "max-h-40 opacity-100 mt-4"
+                        : "max-h-0 opacity-0"
                     }`}
                   >
-                    Estructuras metálicas combinadas con diseño minimalista y funcional.
-                  </p>
+                    <p className="text-zinc-200 leading-relaxed">
+                      Estructuras metálicas combinadas con diseño minimalista y funcional.
+                    </p>
+                  </div>
 
                 </div>
               </div>
@@ -638,35 +634,34 @@ export default function App() {
               {/* CARD 3 */}
               <div
                 onMouseEnter={() => setActiveIndex(2)}
-                onClick={() => setSelectedProject(projects.bibliotecas)}
-                className="group relative flex flex-col justify-end p-8 border-b md:border-b-0 md:border-r border-white/10 cursor-pointer overflow-hidden"
+                onClick={() => setSelectedProject(projects.puertas)}
+                className="group relative flex flex-col justify-end p-8 border-r border-white/10 cursor-pointer overflow-hidden"
               >
 
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent opacity-80 transition-all duration-500 group-hover:bg-black/80"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent transition-all duration-500 group-hover:bg-black/20"></div>
 
-                <div className="relative z-10 transition-all duration-500 group-hover:-translate-y-2">
+                <div className="relative z-10 mt-auto">
 
                   <span className="text-yellow-500 text-sm uppercase tracking-[3px]">
                     Carpintería
                   </span>
 
-                  <button
-                    className="text-left"
-                  >
-                    <h3 className="text-white text-3xl font-bold mt-3 hover:text-yellow-400 transition">
-                      Bibliotecas
-                    </h3>
-                  </button>
+                  <h3 className="text-white text-3xl font-bold mt-3 leading-tight min-h-[96px]">
+                    Puertas Principales
+                  </h3>
 
-                  <p
-                    className={`text-zinc-300 mt-4 leading-relaxed transition-all duration-500 ${
+                  <div
+                    className={`overflow-hidden transition-all duration-500 ${
                       activeIndex === 2
-                        ? "opacity-100 translate-y-0"
-                        : "opacity-0 translate-y-4"
+                        ? "max-h-40 opacity-100 mt-4"
+                        : "max-h-0 opacity-0"
                     }`}
                   >
-                    Espacios funcionales con estética moderna y detalles personalizados.
-                  </p>
+                    <p className="text-zinc-200 leading-relaxed">
+                      Puertas principales fabricadas a medida en madera seleccionada,
+                      combinando diseño, solidez y terminaciones de alta calidad.
+                    </p>
+                  </div>
 
                 </div>
               </div>
@@ -675,34 +670,32 @@ export default function App() {
               <div
                 onMouseEnter={() => setActiveIndex(3)}
                 onClick={() => setSelectedProject(projects.parrillas)}
-                className="group relative flex flex-col justify-end p-8 cursor-pointer overflow-hidden"
+                className="group relative flex flex-col justify-end p-8 border-r border-white/10 cursor-pointer overflow-hidden"
               >
 
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent opacity-80 transition-all duration-500 group-hover:bg-black/80"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent transition-all duration-500 group-hover:bg-black/20"></div>
 
-                <div className="relative z-10 transition-all duration-500 group-hover:-translate-y-2">
+                <div className="relative z-10 mt-auto">
 
                   <span className="text-yellow-500 text-sm uppercase tracking-[3px]">
                     Herrería
                   </span>
 
-                  <button
-                    className="text-left"
-                  >
-                    <h3 className="text-white text-3xl font-bold mt-3 hover:text-yellow-400 transition">
-                      Frente de Parrillas
-                    </h3>
-                  </button>
+                  <h3 className="text-white text-3xl font-bold mt-3 leading-tight min-h-[96px]">
+                    Frente de Parrillas
+                  </h3>
 
-                  <p
-                    className={`text-zinc-300 mt-4 leading-relaxed transition-all duration-500 ${
+                  <div
+                    className={`overflow-hidden transition-all duration-500 ${
                       activeIndex === 3
-                        ? "opacity-100 translate-y-0"
-                        : "opacity-0 translate-y-4"
+                        ? "max-h-40 opacity-100 mt-4"
+                        : "max-h-0 opacity-0"
                     }`}
                   >
-                    Combinación de metal y vidrio para ambientes modernos y elegantes.
-                  </p>
+                    <p className="text-zinc-200 leading-relaxed">
+                      Combinación de metal y vidrio para ambientes modernos y elegantes.
+                    </p>
+                  </div>
 
                 </div>
               </div>
@@ -714,31 +707,29 @@ export default function App() {
                 className="group relative flex flex-col justify-end p-8 border-l border-white/10 cursor-pointer overflow-hidden"
               >
 
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent opacity-80 transition-all duration-500 group-hover:bg-black/80"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent transition-all duration-500 group-hover:bg-black/20"></div>
 
-                <div className="relative z-10 transition-all duration-500 group-hover:-translate-y-2">
+                <div className="relative z-10 mt-auto">
 
                   <span className="text-yellow-500 text-sm uppercase tracking-[3px]">
                     Proyectos
                   </span>
 
-                  <button
-                    className="text-left"
-                  >
-                    <h3 className="text-white text-3xl font-bold mt-3 hover:text-yellow-400 transition">
-                      Otros Trabajos
-                    </h3>
-                  </button>
+                  <h3 className="text-white text-3xl font-bold mt-3 leading-tight min-h-[96px]">
+                    Otros Trabajos
+                  </h3>
 
-                  <p
-                    className={`text-zinc-300 mt-4 leading-relaxed transition-all duration-500 ${
+                  <div
+                    className={`overflow-hidden transition-all duration-500 ${
                       activeIndex === 4
-                        ? "opacity-100 translate-y-0"
-                        : "opacity-0 translate-y-4"
+                        ? "max-h-40 opacity-100 mt-4"
+                        : "max-h-0 opacity-0"
                     }`}
                   >
-                    Proyectos personalizados y trabajos realizados a medida para cada espacio.
-                  </p>
+                    <p className="text-zinc-200 leading-relaxed">
+                      Proyectos personalizados y trabajos realizados a medida para cada espacio.
+                    </p>
+                  </div>
 
                 </div>
               </div>
@@ -752,35 +743,35 @@ export default function App() {
               {
                 title: "Cocinas a Medida",
                 category: "Carpintería",
-                image: "/images/portfolio/trabajo1.jpg",
+                image: "/images/portfolio/trabajo1.webp",
                 project: projects.cocinas,
               },
 
               {
                 title: "Pérgolas",
                 category: "Herrería",
-                image: "/images/portfolio/trabajo2.jpg",
+                image: "/images/portfolio/trabajo2.webp",
                 project: projects.pergolas,
               },
 
               {
                 title: "Bibliotecas",
                 category: "Carpintería",
-                image: "/images/portfolio/trabajo3.jpg",
+                image: "/images/portfolio/trabajo3.webp",
                 project: projects.bibliotecas,
               },
 
               {
                 title: "Frente de Parrillas",
                 category: "Herrería",
-                image: "/images/portfolio/trabajo4.jpg",
+                image: "/images/portfolio/trabajo4.webp",
                 project: projects.parrillas,
               },
 
               {
                 title: "Otros Trabajos",
                 category: "Proyectos",
-                image: "/images/portfolio/otro1.jpg",
+                image: "/images/portfolio/otro1.webp",
                 project: projects.otros,
               },
             ].map((item, index) => (
@@ -1101,43 +1092,51 @@ export default function App() {
               Pagination,
               Autoplay,
               EffectFade,
-              Thumbs,
               Zoom,
+              Thumbs,
             ]}
-            navigation
-            pagination={{ clickable: true }}
-            autoplay={{
-              delay: 3500,
-              disableOnInteraction: false,
-            }}
-            effect="fade"
-            zoom
-            loop
             thumbs={{
               swiper:
                 thumbsSwiper && !thumbsSwiper.destroyed
                   ? thumbsSwiper
                   : null,
             }}
-            className="rounded-3xl overflow-hidden"
+            navigation
+            pagination={{ clickable: true }}
+            autoplay={{
+              delay: 4000,
+              disableOnInteraction: false,
+            }}
+            effect="fade"
+            fadeEffect={{ crossFade: true }}
+            zoom={true}
+            loop={true}
+            className="w-full h-full"
           >
-
-            {selectedProject.images.map((image, index) => (
+            {selectedProject.images.map((img, index) => (
               <SwiperSlide key={index}>
+                <div className="relative h-[70vh] w-full overflow-hidden rounded-2xl flex items-center justify-center bg-black">
 
-                <div className="swiper-zoom-container">
-
+                  {/* BACKGROUND BLUR */}
                   <img
-                    src={image}
+                    src={img}
                     alt=""
-                    className="w-full h-[70vh] object-cover"
+                    className="absolute inset-0 w-full h-full object-cover blur-3xl scale-110 opacity-30"
                   />
 
-                </div>
+                  {/* MAIN IMAGE */}
+                  <div className="relative z-10 flex items-center justify-center w-full h-full p-4">
 
+                    <img
+                      src={img}
+                      alt={`${selectedProject.title} ${index + 1}`}
+                      className="max-h-full max-w-full object-contain rounded-2xl shadow-2xl"
+                    />
+
+                  </div>
+                </div>
               </SwiperSlide>
             ))}
-
           </Swiper>
 
           {/* THUMBNAILS */}

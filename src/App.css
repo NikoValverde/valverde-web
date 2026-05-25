@@ -182,3 +182,18 @@
     border-right-color: var(--border);
   }
 }
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #eab308;
+}
+
+.swiper-pagination-bullet-active {
+  background: #eab308;
+}
