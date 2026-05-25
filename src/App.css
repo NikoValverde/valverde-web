@@ -197,3 +197,7 @@
 .swiper-pagination-bullet-active {
   background: #eab308;
 }
+
+.swiper-zoom-container img {
+  transition: transform 0.3s ease;
+}

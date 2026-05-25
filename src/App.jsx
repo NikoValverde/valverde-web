@@ -25,7 +25,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Navigation,
   Pagination,
-  Autoplay,
   EffectFade,
   Thumbs,
   Zoom,
@@ -1095,7 +1094,6 @@ export default function App() {
             modules={[
               Navigation,
               Pagination,
-              Autoplay,
               EffectFade,
               Zoom,
               Thumbs,
@@ -1108,10 +1106,7 @@ export default function App() {
             }}
             navigation
             pagination={{ clickable: true }}
-            autoplay={{
-              delay: 4000,
-              disableOnInteraction: false,
-            }}
+
             effect="fade"
             fadeEffect={{ crossFade: true }}
             zoom={true}
@@ -1130,12 +1125,12 @@ export default function App() {
                   />
 
                   {/* MAIN IMAGE */}
-                  <div className="relative z-10 flex items-center justify-center w-full h-full p-4">
+                  <div className="swiper-zoom-container relative z-10 flex items-center justify-center w-full h-full p-4 cursor-zoom-in">
 
                     <img
                       src={img}
                       alt={`${selectedProject.title} ${index + 1}`}
-                      className="max-h-full max-w-full object-contain rounded-2xl shadow-2xl"
+                      className="max-h-full max-w-full object-contain rounded-2xl shadow-2xl select-none"
                     />
 
                   </div>
