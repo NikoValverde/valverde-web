@@ -8,11 +8,7 @@ export default function FancyText({ children }) {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true);
-        } else {
-          setVisible(false);
-        }
+        setVisible(entry.isIntersecting);
       },
       {
         threshold: 0.3,
@@ -29,21 +25,25 @@ export default function FancyText({ children }) {
   return (
     <div
       ref={ref}
-      className="relative inline-block w-full overflow-hidden"
+      className="relative inline-block overflow-hidden"
     >
-      {/* Texto base en gris */}
-      <h2 className="text-4xl md:text-5xl font-bold text-zinc-700 whitespace-normal">
+      {/* TEXTO BASE */}
+      <h2 className="text-4xl md:text-5xl font-bold text-zinc-700 leading-tight">
         {children}
       </h2>
 
-      {/* Texto animado en blanco superpuesto */}
-      <h2
-        className={`absolute top-0 left-0 text-4xl md:text-5xl font-bold text-white overflow-hidden whitespace-normal ${
-          visible ? "animate-fancy-fill" : "w-0"
-        }`}
+      {/* TEXTO ANIMADO */}
+      <div
+        className={`
+          absolute inset-0 overflow-hidden
+          transition-all duration-1000 ease-out
+          ${visible ? "w-full" : "w-0"}
+        `}
       >
-        {children}
-      </h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight whitespace-nowrap">
+          {children}
+        </h2>
+      </div>
     </div>
   );
 }

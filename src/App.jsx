@@ -1177,7 +1177,7 @@ export default function App() {
 
       {/* FOOTER */}
       <footer className="border-t border-zinc-800 py-8 text-center text-zinc-500">
-        © 2026 Carpintería y Herrería Valverde. Todos los derechos reservados.
+        © 2026 Carpintería y Herrería Valverde. Todos los derechos reservados. Desarrollado por Nicolás Valverde.
       </footer>
       <a
         href="https://wa.me/5491136385790"
