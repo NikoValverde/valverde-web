@@ -29,14 +29,16 @@ export default function FancyText({ children }) {
   return (
     <div
       ref={ref}
-      className="relative inline-block overflow-hidden"
+      className="relative inline-block w-full overflow-hidden"
     >
-      <h2 className="text-4xl md:text-5xl font-bold text-zinc-700">
+      {/* Texto base en gris */}
+      <h2 className="text-4xl md:text-5xl font-bold text-zinc-700 whitespace-normal">
         {children}
       </h2>
 
+      {/* Texto animado en blanco superpuesto */}
       <h2
-        className={`absolute inset-0 text-4xl md:text-5xl font-bold text-white overflow-hidden ${
+        className={`absolute top-0 left-0 text-4xl md:text-5xl font-bold text-white overflow-hidden whitespace-normal ${
           visible ? "animate-fancy-fill" : "w-0"
         }`}
       >
