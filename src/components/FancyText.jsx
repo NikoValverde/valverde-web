@@ -36,7 +36,7 @@ export default function FancyText({ children }) {
       </h2>
 
       <h2
-        className={`absolute inset-0 text-4xl md:text-5xl font-bold text-white whitespace-nowrap overflow-hidden ${
+        className={`absolute inset-0 text-4xl md:text-5xl font-bold text-white overflow-hidden ${
           visible ? "animate-fancy-fill" : "w-0"
         }`}
       >

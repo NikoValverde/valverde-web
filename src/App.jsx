@@ -358,37 +358,104 @@ export default function App() {
           <div className="grid md:grid-cols-2 gap-10">
 
             {/* SERVICIOS CARPINTERÍA */}
-            <div className="relative group rounded-3xl p-[1px] overflow-hidden">
+            <div
+              className="
+                relative group rounded-3xl p-[1px] overflow-hidden
+                transition-all duration-500
+                active:scale-[0.985]
+              "
+            >
 
               {/* CONTENIDO */}
-              <div className="relative rounded-3xl overflow-hidden h-[340px] border border-zinc-800">
+              <div
+                className="
+                  relative rounded-3xl overflow-hidden h-[340px]
+                  border border-zinc-800
+                  transition-all duration-500
+                  group-hover:border-[#d4af37]/40
+                  group-active:border-[#d4af37]/40
+                  group-hover:shadow-[0_0_40px_rgba(212,175,55,0.10)]
+                  group-active:shadow-[0_0_40px_rgba(212,175,55,0.12)]
+                "
+              >
 
                 {/* IMAGEN */}
                 <img
                   src="/images/servicios/carpinteria.webp"
                   alt="Carpintería"
-                  className="absolute inset-0 w-full h-full object-cover scale-100 blur-0 brightness-90 transition-all duration-700 group-hover:scale-110 group-hover:blur-[2px] group-hover:brightness-50"
+                  className="
+                    absolute inset-0 w-full h-full object-cover
+                    scale-100 blur-0 brightness-90
+                    transition-all duration-700 ease-out
+                    group-hover:scale-110
+                    group-active:scale-105
+                    group-hover:blur-[2px]
+                    group-hover:brightness-50
+                    group-active:brightness-50
+                  "
                 />
 
                 {/* OVERLAY */}
-                <div className="absolute inset-0 bg-black/40"></div>
+                <div
+                  className="
+                    absolute inset-0
+                    bg-gradient-to-t
+                    from-black/85
+                    via-black/35
+                    to-transparent
+                    transition-all duration-500
+                    group-hover:from-black/90
+                    group-active:from-black/90
+                  "
+                ></div>
 
                 {/* TEXTO */}
-                <div className="relative z-10 h-full flex flex-col justify-end p-10 transition-all duration-500">
+                <div
+                  className="
+                    relative z-10 h-full flex flex-col justify-end p-10
+                    transition-all duration-500
+                  "
+                >
 
                   <Hammer
                     size={50}
-                    className="text-yellow-500 mb-6 transition-all duration-500 group-hover:-translate-y-2 group-hover:scale-110"
+                    className="
+                      text-yellow-500 mb-6
+                      transition-all duration-500 ease-out
+                      group-hover:-translate-y-2
+                      group-hover:scale-110
+                      group-active:-translate-y-1
+                      group-active:scale-105
+                    "
                   />
 
-                  <h4 className="text-3xl font-bold transition-all duration-500 group-hover:-translate-y-2">
+                  <h4
+                    className="
+                      text-3xl font-bold
+                      transition-all duration-500 ease-out
+                      group-hover:-translate-y-2
+                      group-active:-translate-y-1
+                    "
+                  >
                     Carpintería
                   </h4>
 
-                  <p className="mt-4 leading-relaxed text-[15px] md:text-base text-zinc-300 opacity-80 transition-all duration-500 group-hover:text-white group-hover:opacity-100 group-hover:text-[16px] md:group-hover:text-lg">
+                  <p
+                    className="
+                      mt-4 leading-relaxed
+                      text-[15px] md:text-base
+                      text-zinc-300 opacity-80
+                      transition-all duration-500 ease-out
+                      group-hover:text-white
+                      group-hover:opacity-100
+                      group-hover:translate-y-[-2px]
+                      group-active:text-white
+                      group-active:opacity-100
+                    "
+                  >
                     Nos especializamos en la fabricación de amoblamientos de cocina,
-                     vestidores, vanitorys, escaleras, revestimientos y muebles personalizados,
-                     desarrollando proyectos únicos con materiales de calidad y terminaciones premium.
+                    vestidores, vanitorys, escaleras, revestimientos y muebles personalizados,
+                    desarrollando proyectos únicos con materiales de calidad y terminaciones premium.
                   </p>
 
                 </div>
@@ -397,37 +464,104 @@ export default function App() {
             </div>
 
             {/*  SERVICIOS HERRERÍA */}
-            <div className="relative group rounded-3xl p-[1px] overflow-hidden">
+            <div
+              className="
+                relative group rounded-3xl p-[1px] overflow-hidden
+                transition-all duration-500
+                active:scale-[0.985]
+              "
+            >
 
               {/* CONTENIDO */}
-              <div className="relative rounded-3xl overflow-hidden h-[340px] border border-zinc-800">
+              <div
+                className="
+                  relative rounded-3xl overflow-hidden h-[340px]
+                  border border-zinc-800
+                  transition-all duration-500
+                  group-hover:border-[#d4af37]/40
+                  group-active:border-[#d4af37]/40
+                  group-hover:shadow-[0_0_40px_rgba(212,175,55,0.10)]
+                  group-active:shadow-[0_0_40px_rgba(212,175,55,0.12)]
+                "
+              >
 
                 {/* IMAGEN */}
                 <img
                   src="/images/servicios/herreria.webp"
                   alt="Herrería"
-                  className="absolute inset-0 w-full h-full object-cover scale-100 blur-0 brightness-90 transition-all duration-700 group-hover:scale-110 group-hover:blur-[2px] group-hover:brightness-50"
+                  className="
+                    absolute inset-0 w-full h-full object-cover
+                    scale-100 blur-0 brightness-90
+                    transition-all duration-700 ease-out
+                    group-hover:scale-110
+                    group-active:scale-105
+                    group-hover:blur-[2px]
+                    group-hover:brightness-50
+                    group-active:brightness-50
+                  "
                 />
 
                 {/* OVERLAY */}
-                <div className="absolute inset-0 bg-black/40"></div>
+                <div
+                  className="
+                    absolute inset-0
+                    bg-gradient-to-t
+                    from-black/85
+                    via-black/35
+                    to-transparent
+                    transition-all duration-500
+                    group-hover:from-black/90
+                    group-active:from-black/90
+                  "
+                ></div>
 
                 {/* TEXTO */}
-                <div className="relative z-10 h-full flex flex-col justify-end p-10 transition-all duration-500">
+                <div
+                  className="
+                    relative z-10 h-full flex flex-col justify-end p-10
+                    transition-all duration-500
+                  "
+                >
 
                   <Wrench
                     size={50}
-                    className="text-yellow-500 mb-6 transition-all duration-500 group-hover:-translate-y-2 group-hover:scale-110"
+                    className="
+                      text-yellow-500 mb-6
+                      transition-all duration-500 ease-out
+                      group-hover:-translate-y-2
+                      group-hover:scale-110
+                      group-active:-translate-y-1
+                      group-active:scale-105
+                    "
                   />
 
-                  <h4 className="text-3xl font-bold transition-all duration-500 group-hover:-translate-y-2">
+                  <h4
+                    className="
+                      text-3xl font-bold
+                      transition-all duration-500 ease-out
+                      group-hover:-translate-y-2
+                      group-active:-translate-y-1
+                    "
+                  >
                     Herrería
                   </h4>
 
-                  <p className="mt-4 leading-relaxed text-[15px] md:text-base text-zinc-300 opacity-80 transition-all duration-500 group-hover:text-white group-hover:opacity-100 group-hover:text-[16px] md:group-hover:text-lg">
+                  <p
+                    className="
+                      mt-4 leading-relaxed
+                      text-[15px] md:text-base
+                      text-zinc-300 opacity-80
+                      transition-all duration-500 ease-out
+                      group-hover:text-white
+                      group-hover:opacity-100
+                      group-hover:translate-y-[-2px]
+                      group-active:text-white
+                      group-active:opacity-100
+                    "
+                  >
                     Creamos proyectos de herrería que combinan diseño,
                     funcionalidad y durabilidad. Realizamos pérgolas,
-                    escaleras, puertas, frentes de parrilla, divisores y 
+                    escaleras, puertas, frentes de parrilla, divisores y
                     estructuras metálicas con estética moderna y terminaciones cuidadas.
                   </p>
 
