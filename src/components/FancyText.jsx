@@ -25,10 +25,17 @@ export default function FancyText({ children }) {
   return (
     <div
       ref={ref}
-      className="relative inline-block overflow-hidden"
+      className="relative inline-block max-w-full"
     >
       {/* TEXTO BASE */}
-      <h2 className="text-4xl md:text-5xl font-bold text-zinc-700 leading-tight">
+      <h2
+        className="
+          text-[2rem] sm:text-4xl md:text-5xl
+          font-bold leading-tight
+          tracking-tight
+          text-zinc-700
+        "
+      >
         {children}
       </h2>
 
@@ -40,7 +47,15 @@ export default function FancyText({ children }) {
           ${visible ? "w-full" : "w-0"}
         `}
       >
-        <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight whitespace-nowrap">
+        <h2
+          className="
+            text-[2rem] sm:text-4xl md:text-5xl
+            font-bold leading-tight
+            tracking-tight
+            text-white
+            whitespace-nowrap
+          "
+        >
           {children}
         </h2>
       </div>
