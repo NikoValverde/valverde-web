@@ -308,32 +308,27 @@ export default function App() {
       {/* HERO */}
       <section
         id="inicio"
-        className="relative overflow-hidden min-h-screen flex items-center justify-center text-center px-6 bg-gradient-to-b from-black via-zinc-900 to-black"
-        style={{
-          backgroundImage: `url(${heroImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
+        className="relative overflow-hidden min-h-screen flex items-center justify-center text-center px-6 bg-black"
       >
-        {/* GLOW DORADO */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div
-              className="
-                absolute
-                left-1/2
-                top-1/2
-                -translate-x-1/2
-                -translate-y-1/2
-                w-[700px]
-                h-[700px]
-                rounded-full
-                bg-yellow-500/15
-                blur-[180px]
-              "
-          />
-        </div>
 
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/55 to-black/70"></div>
+        {/* HERO IMAGE */}
+        <img
+          src={heroImage}
+          alt=""
+          className="
+            absolute
+            inset-0
+            w-full
+            h-full
+            object-cover
+            hero-bg
+          "
+        />
+
+        {/* OVERLAY OSCURO */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/50 to-black/75"></div>
+
+        {/* CONTENIDO */}
         <div className="relative z-10 max-w-4xl">
           <h2 className="hero-title text-5xl md:text-7xl font-bold leading-tight">
             Diseño y fabricación</h2>
@@ -376,7 +371,11 @@ export default function App() {
 
             <ChevronRight
               size={20}
-              className="transition-transform duration-300 group-hover:translate-x-1"
+              className="
+              transition-transform 
+              duration-300 
+              group-hover:translate-x-1
+              "
             />
           </a>
         </div>

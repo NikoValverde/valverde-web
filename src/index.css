@@ -29,11 +29,13 @@ html {
 @keyframes fadeUp {
   from {
     opacity: 0;
+    filter: blur(8px);
     transform: translateY(30px);
   }
 
   to {
     opacity: 1;
+    filter: blur(0);
     transform: translateY(0);
   }
 }
@@ -54,6 +56,20 @@ html {
 .hero-button {
   opacity: 0;
   animation: fadeUp 0.9s ease-out 0.5s forwards;
+}
+
+@keyframes heroZoom {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.05);
+  }
+}
+
+.hero-bg {
+  animation: heroZoom 25s ease-in-out infinite alternate;
 }
 
 /* ===================================================== */
