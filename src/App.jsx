@@ -308,21 +308,42 @@ export default function App() {
       {/* HERO */}
       <section
         id="inicio"
-        className="min-h-screen flex items-center justify-center text-center px-6 bg-gradient-to-b from-black via-zinc-900 to-black"
+        className="relative overflow-hidden min-h-screen flex items-center justify-center text-center px-6 bg-gradient-to-b from-black via-zinc-900 to-black"
         style={{
           backgroundImage: `url(${heroImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-black/70"></div>
+        {/* GLOW DORADO */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div
+              className="
+                absolute
+                left-1/2
+                top-1/2
+                -translate-x-1/2
+                -translate-y-1/2
+                w-[700px]
+                h-[700px]
+                rounded-full
+                bg-yellow-500/15
+                blur-[180px]
+              "
+          />
+        </div>
+
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/55 to-black/70"></div>
         <div className="relative z-10 max-w-4xl">
-          <h2 className="text-5xl md:text-7xl font-bold leading-tight">
+          <h2 className="hero-title text-5xl md:text-7xl font-bold leading-tight">
             Diseño y fabricación</h2>
-            <h2><span className="text-5xl md:text-7xl font-bold leading-tight text-yellow-500"> a medida</span>
+            <h2 className="hero-title">
+              <span className="text-5xl md:text-7xl font-bold leading-tight text-yellow-500">
+                 a medida
+              </span>
           </h2>
 
-          <p className="mt-8 text-[#e5e5e5] text-lg leading-relaxed">
+          <p className="hero-subtitle mt-8 text-[#e5e5e5] text-lg leading-relaxed">
             Especialistas en carpintería y herrería moderna. Creamos muebles,
             estructuras y proyectos únicos con diseño elegante y materiales de
             primera calidad.
@@ -330,10 +351,33 @@ export default function App() {
 
           <a
             href="#contacto"
-            className="inline-flex items-center gap-2 mt-10 bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-8 py-4 rounded-full transition"
+            className="
+              group
+              hero-button
+              inline-flex
+              items-center
+              gap-2
+              mt-10
+              bg-yellow-500
+              hover:bg-yellow-400
+              text-black
+              font-bold
+              px-8
+              py-4
+              rounded-full
+              transition-all
+              duration-500
+              hover:scale-105
+              hover:-translate-y-1
+              hover:shadow-[0_0_35px_rgba(234,179,8,0.35)]
+            "
           >
             Solicitar presupuesto
-            <ChevronRight size={20} />
+
+            <ChevronRight
+              size={20}
+              className="transition-transform duration-300 group-hover:translate-x-1"
+            />
           </a>
         </div>
       </section>

@@ -2,10 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ===================================================== */
+/* CONFIGURACIÓN GLOBAL */
+/* ===================================================== */
+
 html {
   scroll-behavior: smooth;
 }
 
+/* ===================================================== */
+/* ANIMACIONES GENERALES */
+/* ===================================================== */
+
+/* Rotación decorativa */
 @keyframes spin {
   0% {
     transform: rotate(0deg) scale(1.5);
@@ -16,7 +25,41 @@ html {
   }
 }
 
-/*Fancytext*/
+/* Aparición suave desde abajo */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===================================================== */
+/* HERO */
+/* ===================================================== */
+
+.hero-title {
+  animation: fadeUp 0.9s ease-out forwards;
+}
+
+.hero-subtitle {
+  opacity: 0;
+  animation: fadeUp 0.9s ease-out 0.25s forwards;
+}
+
+.hero-button {
+  opacity: 0;
+  animation: fadeUp 0.9s ease-out 0.5s forwards;
+}
+
+/* ===================================================== */
+/* FANCY TEXT */
+/* ===================================================== */
+
 @keyframes fancyFill {
   from {
     width: 0%;
@@ -31,7 +74,10 @@ html {
   animation: fancyFill 1.5s ease forwards;
 }
 
-/*LOOP MARCAS*/
+/* ===================================================== */
+/* LOOP DE MARCAS */
+/* ===================================================== */
+
 @keyframes marquee {
   0% {
     transform: translateX(0%);
@@ -44,4 +90,27 @@ html {
 
 .animate-marquee {
   animation: marquee 35s linear infinite;
+}
+
+/* ===================================================== */
+/* SWIPER */
+/* ===================================================== */
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #eab308;
+}
+
+.swiper-pagination-bullet-active {
+  background: #eab308;
+}
+
+.swiper-zoom-container img {
+  transition: transform 0.3s ease;
 }
