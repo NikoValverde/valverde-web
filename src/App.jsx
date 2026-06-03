@@ -5,6 +5,8 @@ import {
 
 import FancyText from "./components/FancyText";
 
+import Nosotros from "./components/Nosotros.jsx";
+
 import { useState } from "react";
 
 import heroImage from "./assets/Banner-1.webp";
@@ -203,12 +205,15 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
           {/* LOGO */}
-          <div className="flex items-center gap-6 ml-1">
-
+          <a
+            href="#inicio"
+            aria-label="Ir al inicio"
+            className="flex items-center gap-6 ml-1 group"
+          >
             <img
               src="/logo.png"
               alt="Valverde"
-              className="w-16 h-16 object-contain"
+              className="w-16 h-16 object-contain transition-transform duration-300 group-hover:scale-105"
             />
 
             <div>
@@ -220,8 +225,7 @@ export default function App() {
                 CARPINTERÍA Y HERRERÍA
               </p>
             </div>
-
-          </div>
+          </a>
 
           {/* MENU DESKTOP */}
           <nav className="hidden md:flex gap-8 text-sm uppercase tracking-wider">
@@ -1000,7 +1004,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* NOSOTROS */}
+      {/* OLDNOSOTROS 
       <section id="nosotros" className="py-24 px-6 bg-zinc-950">
         <div className="max-w-5xl mx-auto text-center">
           <FancyText>Nosotros</FancyText>
@@ -1012,6 +1016,9 @@ export default function App() {
           </p>
         </div>
       </section>
+      */}
+
+      <Nosotros />
 
       {/* MARCAS */}
       <section className="py-20 bg-black overflow-hidden border-t border-zinc-900">
@@ -1231,7 +1238,7 @@ export default function App() {
         © 2026 Carpintería y Herrería Valverde. Todos los derechos reservados. Desarrollado por Nicolás Valverde.
       </footer>
       <a
-        href="https://wa.me/5491136385790"
+        href="https://wa.me/5491155681767"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 group"
