@@ -91,6 +91,7 @@ export default function App() {
         "/images/projects/cocinas/cocina5.webp",
         "/images/projects/cocinas/cocina6.webp",
         "/images/projects/cocinas/cocina7.webp",
+        "/images/projects/cocinas/cocina8.webp",
       ],
     },
 
@@ -102,6 +103,9 @@ export default function App() {
         "/images/projects/pergolas/pergola1.webp",
         "/images/projects/pergolas/pergola2.webp",
         "/images/projects/pergolas/pergola3.webp",
+        "/images/projects/pergolas/pergola4.webp",
+        "/images/projects/pergolas/pergola5.webp",
+        "/images/projects/pergolas/pergola6.webp",
       ],
     },
 
@@ -124,6 +128,8 @@ export default function App() {
         "/images/projects/parrillas/parrilla1.webp",
         "/images/projects/parrillas/parrilla2.webp",
         "/images/projects/parrillas/parrilla3.webp",
+        "/images/projects/parrillas/parrilla4.webp",
+        "/images/projects/parrillas/parrilla5.webp",
       ],
     },
 
@@ -137,6 +143,8 @@ export default function App() {
         "/images/projects/otros/escalera1.webp",
         "/images/projects/otros/divisor.webp",
         "/images/projects/otros/escritorio.webp",
+        "/images/projects/otros/escritorio2.webp",
+        "/images/projects/otros/modenablanc.webp",
       ],
     },
   };
