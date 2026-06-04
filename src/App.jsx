@@ -1134,12 +1134,22 @@ export default function App() {
             <div className="mt-10 space-y-6">
               <div className="flex items-center gap-4">
                 <Phone className="text-yellow-500" />
-                <span>+54 9 11 5568-1767</span>
+                <a
+                  href="tel:+5491155681767"
+                  className="hover:text-yellow-500 transition-colors"
+                >
+                  +54 9 11 5568-1767
+                </a>
               </div>
 
               <div className="flex items-center gap-4">
                 <Mail className="text-yellow-500" />
-                <span>valverdecyh@gmail.com</span>
+                <a
+                  href="mailto:valverdecyh@gmail.com"
+                  className="hover:text-yellow-500 transition-colors"
+                >
+                  valverdecyh@gmail.com
+                </a>
               </div>
 
               <div className="flex items-center gap-4">
