@@ -1,16 +1,43 @@
-# React + Vite
+# Carpintería Valverde
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sitio web corporativo desarrollado para Carpintería Valverde, enfocado en la presentación de servicios, galería de trabajos realizados y contacto con potenciales clientes.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Diseño responsive para móviles, tablets y escritorio.
+* Galería de proyectos realizados.
+* Presentación de servicios y trabajos a medida.
+* Integración con WhatsApp para contacto directo.
+* Optimización básica para SEO.
+* Dominio personalizado.
+* Despliegue continuo mediante GitHub y Vercel.
 
-## React Compiler
+## Tecnologías utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React
+* Vite
+* JavaScript
+* HTML5
+* CSS3
+* Git
+* GitHub
+* Vercel
+* Google Search Console
 
-## Expanding the ESLint configuration
+## Sitio en producción
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+https://carpinteriavalverde.com.ar
+
+## Instalación local
+
+```bash
+npm install
+npm run dev
+```
+
+## Build de producción
+
+```bash
+npm run build
+```
+
