@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://carpinteriavalverde.vercel.app/sitemap.xml
+Sitemap: https://carpinteriavalverde.com.ar/sitemap.xml

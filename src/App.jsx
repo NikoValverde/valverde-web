@@ -1004,20 +1004,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* OLDNOSOTROS 
-      <section id="nosotros" className="py-24 px-6 bg-zinc-950">
-        <div className="max-w-5xl mx-auto text-center">
-          <FancyText>Nosotros</FancyText>
-
-          <p className="text-zinc-400 mt-8 leading-relaxed text-lg">
-            En Carpintería y Herrería Valverde combinamos la tradición de una carpintería familiar con estándares de calidad modernos. 
-            Desarrollamos proyectos personalizados en madera y herrería, priorizando la excelencia en terminaciones, la funcionalidad y el diseño. 
-            Cada trabajo refleja nuestro compromiso con la calidad y el cuidado en cada detalle.
-          </p>
-        </div>
-      </section>
-      */}
-
       <Nosotros />
 
       {/* MARCAS */}
