@@ -1121,10 +1121,10 @@ export default function App() {
               <div className="flex items-center gap-4">
                 <Phone className="text-yellow-500" />
                 <a
-                  href="tel:+5491155681767"
+                  href="tel:+5491138640083"
                   className="hover:text-yellow-500 transition-colors"
                 >
-                  +54 9 11 5568-1767
+                  +54 9 11 3864-0083
                 </a>
               </div>
 
@@ -1234,7 +1234,7 @@ export default function App() {
         © 2026 Carpintería y Herrería Valverde. Todos los derechos reservados. Desarrollado por Nicolás Valverde.
       </footer>
       <a
-        href="https://wa.me/5491155681767"
+        href="https://wa.me/5491138640083"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 group"
