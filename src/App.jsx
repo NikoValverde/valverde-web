@@ -119,6 +119,7 @@ export default function App() {
         "/images/projects/puertas/puerta1.webp",
         "/images/projects/puertas/puerta2.webp",
         "/images/projects/puertas/puerta3.webp",
+        "/images/projects/puertas/puerta4.webp",
       ],
     },
 
@@ -147,6 +148,7 @@ export default function App() {
         "/images/projects/otros/escritorio.webp",
         "/images/projects/otros/escritorio2.webp",
         "/images/projects/otros/modenablanc.webp",
+        "/images/projects/otros/biblioteca-metal.webp",
       ],
     },
   };
