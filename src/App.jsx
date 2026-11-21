@@ -183,21 +183,32 @@ export default function App() {
       return;
     }
 
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData,
-    });
+    const form = event.target;
 
-    const data = await response.json();
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
 
-    if (data.success) {
-      setResult("Solicitud enviada correctamente.");
-      event.target.reset();
-    } else {
-      setResult("Ocurrió un error.");
+      const data = await response.json().catch(() => null);
+
+      if (response.ok && data?.success) {
+        setResult("Solicitud enviada correctamente.");
+        form.reset();
+      } else {
+        setResult(
+          "No pudimos enviar tu solicitud. Intentá de nuevo o escribinos por WhatsApp al +54 9 11 5568-1767."
+        );
+      }
+    } catch (error) {
+      console.error("Error al enviar el formulario:", error);
+      setResult(
+        "Hubo un problema de conexión. Revisá tu internet e intentá de nuevo, o escribinos por WhatsApp al +54 9 11 5568-1767."
+      );
+    } finally {
+      setLoading(false);
     }
-
-    setLoading(false);
   };
   return (
     <div className="bg-black text-white min-h-screen">
